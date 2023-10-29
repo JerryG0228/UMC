@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UMC week2</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="box">
+      <div>
+        <div class="title">회원 가입</div>
+      </div>
+      <div>
+        <div class="section">
+          <div>
+            <div class="info">이름</div>
+            <input type="text" class="info-i" name="name" autocomplete="off" />
+            <div id="validname">필수 입력 항목입니다!</div>
+          </div>
+          <div>
+            <div class="nickname">닉네임</div>
+            <input
+              type="text"
+              class="nickname-i"
+              name="nickname"
+              autocomplete="off"
+            />
+          </div>
+          <div id="validnickname">닉네임은 2-5글자로 구성해주세요!</div>
+          <div>
+            <div class="email">이메일</div>
+            <input
+              type="email"
+              class="email-i"
+              name="email"
+              autocomplete="off"
+            />
+            <div id="validemail">올바른 메일 형식이 아닙니다!</div>
+          </div>
+          <div>
+            <div class="pw">비밀번호</div>
+            <input type="password" class="pw-i" name="pw" autocomplete="off" />
+            <div id="validpw">영어+숫자+특수문자를 조합하여 작성해주세요.</div>
+          </div>
+          <div>
+            <div class="pw-confirm">비밀번호 확인</div>
+            <input
+              type="password"
+              class="pw-confirm-i"
+              name="pw-confirm"
+              autocomplete="off"
+            />
+            <div id="validpwConfirm">비밀번호가 일치하지 않습니다.</div>
+          </div>
+        </div>
+        <div>
+          <input
+            type="submit"
+            id="register-btn"
+            disabled="disabled"
+            value="가입하기"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-wrapper" style="display: none">
+      <div class="modal">
+        <h1>가입 성공!</h1>
+        <p>umc 챌린저 가입을 축하합니다!!</p>
+        <div class="close">
+          <button id="closebtn">닫기</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
