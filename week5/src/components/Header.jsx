@@ -1,5 +1,6 @@
 // import { Link } from 'react-router-dom';
 import * as S from './headerStyled';
+import LoginControl from './LoginControl';
 
 export default function Header() {
   return (
@@ -22,6 +23,9 @@ export default function Header() {
           </li>
           <li>
             <S.LinkStyled to='/person'>인물</S.LinkStyled>
+          </li>
+          <li>
+            <LoginControl />
           </li>
         </ul>
       </S.header>
