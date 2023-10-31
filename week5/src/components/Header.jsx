@@ -24,10 +24,8 @@ export default function Header() {
           <li>
             <S.LinkStyled to='/person'>인물</S.LinkStyled>
           </li>
-          <li>
-            <LoginControl />
-          </li>
         </ul>
+        <LoginControl />
       </S.header>
     </S.headerContainer>
   );
