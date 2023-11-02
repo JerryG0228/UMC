@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import * as S from './LoginControlStyled';
 
-function LoginControl() {
+export default function LoginControl() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLoginClick = () => {
@@ -30,5 +30,3 @@ function LoginControl() {
     </div>
   );
 }
-
-export default LoginControl;
