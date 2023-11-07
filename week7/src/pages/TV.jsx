@@ -1,5 +1,5 @@
 import React from 'react';
-import ItemBox from '../components/ItemBox';
+import ProgramBox from '../components/ProgramBox';
 import { programs } from '../tvDummy';
 
 export default function TV() {
@@ -8,7 +8,7 @@ export default function TV() {
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         {programs.results.map((program) => {
           return (
-            <ItemBox
+            <ProgramBox
               title={program.name}
               poster_path={program.poster_path}
               vote_average={program.vote_average}

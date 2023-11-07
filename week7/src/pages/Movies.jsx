@@ -1,6 +1,6 @@
 import React from 'react';
-import Movie from '../components/Moviebox';
 import { movies } from '../movieDummy';
+import MovieBox from '../components/MovieBox';
 
 export default function Movies() {
   return (
@@ -8,7 +8,7 @@ export default function Movies() {
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         {movies.results.map((movie) => {
           return (
-            <Movie
+            <MovieBox
               title={movie.title}
               poster_path={movie.poster_path}
               vote_average={movie.vote_average}
