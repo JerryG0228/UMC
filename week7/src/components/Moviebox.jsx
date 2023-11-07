@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Item from './Item';
+import Item from './ItemComponent/Item';
 
 export default function MovieBox({ title, poster_path, vote_average, overview }) {
   const navigate = useNavigate();

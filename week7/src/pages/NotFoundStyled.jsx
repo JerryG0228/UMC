@@ -20,4 +20,5 @@ export const notFoundBtn = styled.button`
   all: unset;
   color: red;
   font-size: 35px;
+  cursor: pointer;
 `;
