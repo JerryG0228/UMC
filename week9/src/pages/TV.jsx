@@ -5,7 +5,7 @@ import { programs } from '../tvDummy';
 export default function TV() {
   return (
     <div>
-      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
         {programs.results.map((program) => {
           return (
             <ProgramBox
