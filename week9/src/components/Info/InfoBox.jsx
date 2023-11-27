@@ -4,6 +4,7 @@ import { StyledInput, InfoForm, InfoTitle, WarningMsg, SubmitBtn, NotCorrectBtn 
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { setId, setPassword, setToken } from '../../redux/loginRedux';
+import KakaoButton from './KakaoButton';
 
 export default function InfoBox() {
   const [user, setUser] = useState('');
@@ -123,6 +124,8 @@ export default function InfoBox() {
         ) : (
           <NotCorrectBtn>확인</NotCorrectBtn>
         )}
+
+        <KakaoButton />
       </InfoForm>
     </div>
   );

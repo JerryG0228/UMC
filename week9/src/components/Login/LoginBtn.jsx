@@ -9,7 +9,8 @@ export default function LoginBtn() {
   const dispatch = useDispatch();
 
   const token = useSelector((state) => state.login.token);
-  const loginText = token ? '로그아웃' : '로그인';
+  const name = useSelector((state) => state.login.name);
+  const loginText = name ? `${name}님` : '로그인';
 
   const goLoginPage = () => {
     if (loginText === '로그아웃') dispatch(setToken(null));

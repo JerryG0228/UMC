@@ -9,6 +9,7 @@ import Movie from './pages/Movie';
 import Login from './pages/login';
 import Program from './pages/Program';
 import Movies2 from './pages/Movies2';
+import KakaoRedirect from './components/Info/KakaoRedirect';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path='/movies/:title' element={<Movie />} />
           <Route path='/tv/:title' element={<Program />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/oauth' element={<KakaoRedirect />} />
         </Routes>
       </BrowserRouter>
     </div>
